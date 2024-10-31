@@ -16,7 +16,7 @@ type ProjectProps = {
 
 export default function ProjectCard({ project }: ProjectProps) {
   return (
-    <div className="relative flex flex-col gap-3 bg-primary/50 rounded-lg p-4 transform transition-all duration-200 group   hover:bg-primary/70 shadow-md hover:shadow-lg">
+    <div className="relative text-secondary flex flex-col gap-3 bg-primary/50 rounded-lg p-4 transform transition-all duration-200 group   hover:bg-primary/70 shadow-md hover:shadow-lg">
       <div className="absolute inset-0 -z-10 bg-muted rounded-lg transform transition-transform duration-200 translate-y-1"></div>
 
       <div className="flex gap-4 items-start relative">

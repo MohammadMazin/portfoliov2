@@ -16,7 +16,7 @@ type JobProps = {
 
 export function JobPreview({ job }: JobProps) {
   return (
-    <div className="relative flex flex-col gap-3 bg-primary/50 rounded-lg p-4 transform transition-all duration-200 hover:bg-primary/70 shadow-md hover:shadow-lg">
+    <div className="relative text-secondary flex flex-col gap-3 bg-primary/50 rounded-lg p-4 transform transition-all duration-200 hover:bg-primary/70 shadow-md hover:shadow-lg">
       <div className="absolute inset-0 -z-10 bg-muted rounded-lg transform transition-transform duration-200 translate-y-1"></div>
 
       <div className="flex gap-4 items-center relative">

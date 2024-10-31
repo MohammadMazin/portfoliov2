@@ -20,26 +20,28 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, []);
 
-  const activeLink = "text-primary font-bold text-lg";
+  const activeLink = "text-primary text-lg";
   const inactiveLink = "text-secondary";
 
   const getLinkClass = (sectionId: string) =>
-    `transition-all ${activeSection === sectionId ? activeLink : inactiveLink}`;
+    `font-bold transition-all hover:text-primary/75  ${
+      activeSection === sectionId ? activeLink : inactiveLink
+    }`;
 
   return (
-    <nav>
+    <nav className="my-4">
       <ul>
         <li className={getLinkClass("aboutMe")}>
-          <a href="#aboutMe">About Me</a>
+          <a href="#aboutMe">ABOUT ME</a>
         </li>
         <li className={getLinkClass("skills")}>
-          <a href="#skills">Skills</a>
+          <a href="#skills">SKILLS</a>
         </li>
         <li className={getLinkClass("experience")}>
-          <a href="#experience">Experience</a>
+          <a href="#experience">EXPERIENCE</a>
         </li>
         <li className={getLinkClass("projects")}>
-          <a href="#projects">Projects</a>
+          <a href="#projects">PROJECTS</a>
         </li>
       </ul>
     </nav>
