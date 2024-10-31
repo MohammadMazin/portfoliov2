@@ -44,7 +44,7 @@ export default function ProjectCard({ project }: ProjectProps) {
           return <li className="text-sm">{desc}</li>;
         })}
       </ul>
-      <span className="flex gap-1">
+      <span className="flex gap-1 flex-wrap">
         {project.skills.map((skill: string) => {
           return (
             <Badge className="flex justify-center bg-secondary font-bold items-center pointer-events-none">

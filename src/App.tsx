@@ -8,7 +8,7 @@ const App: React.FC = () => {
 
   return (
     <main className="w-[100vw] bg-background min-h-[100vh]">
-      <div className="mx-auto w-full max-w-[1000px] flex py-12">
+      <div className="mx-auto w-full max-w-[900px] flex py-12">
         <section className="flex-1 basis-1/3 sticky top-12 self-start">
           <Info />
         </section>

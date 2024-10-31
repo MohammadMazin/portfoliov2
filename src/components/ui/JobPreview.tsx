@@ -41,7 +41,7 @@ export function JobPreview({ job }: JobProps) {
           return <li className="text-sm">{desc}</li>;
         })}
       </ul>
-      <span className="flex gap-1">
+      <span className="flex gap-1 flex-wrap">
         {job.skills.map((skill: string) => {
           return (
             <Badge className="flex justify-center bg-secondary font-bold items-center pointer-events-none">
