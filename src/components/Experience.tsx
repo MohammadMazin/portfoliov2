@@ -42,7 +42,7 @@ const jobs: Job[] = [
 export function Experience() {
   return (
     <div className="flex flex-col gap-8">
-      <h2 className="text-xl font-bold">Experience</h2>
+      <h2 className="text-2xl font-bold text-secondary">Experience</h2>
       {jobs.map((job) => (
         <JobPreview job={job} />
       ))}
