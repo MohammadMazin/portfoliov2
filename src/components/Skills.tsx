@@ -3,7 +3,7 @@ import { Badge } from "./ui/badge";
 
 export function Skills() {
   return (
-    <div className="flex flex-col gap-4">
+    <div id="skills" className="section flex flex-col gap-4">
       <h2 className="text-2xl font-bold text-secondary">Skills</h2>
       {skills.map((skill) => (
         <div className="flex flex-col gap-1">

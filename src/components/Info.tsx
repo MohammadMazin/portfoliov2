@@ -2,6 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { Button } from "./ui/button";
 import { TfiDownload } from "react-icons/tfi";
+import Navbar from "./Navbar";
 export function Info() {
   return (
     <div className="flex flex-col gap-2 p-4">
@@ -20,13 +21,7 @@ export function Info() {
         <FaLinkedin className="text-primary text-2xl hover:text-primary/80 cursor-pointer" />
       </span>
 
-      <nav>
-        <ul className="">
-          <li>About Me</li>
-          <li>Experience</li>
-          <li>Projects</li>
-        </ul>
-      </nav>
+      <Navbar />
 
       <span className="flex gap-2 ">
         <Button className="text-white rounded-full">
