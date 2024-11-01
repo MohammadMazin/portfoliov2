@@ -18,7 +18,6 @@ export default function ProjectCard({ project }: ProjectProps) {
   return (
     <div className="group relative flex transform flex-col gap-3 rounded-lg bg-primary/0 p-4 text-secondary shadow-md transition-all duration-200 hover:bg-primary/0 hover:shadow-lg">
       <div className="absolute inset-0 -z-10 translate-y-1 transform rounded-lg bg-muted/50 transition-transform duration-200"></div>
-
       <div className="relative flex items-start gap-4">
         {project.logo && (
           <span>
