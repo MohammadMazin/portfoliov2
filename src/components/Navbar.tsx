@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("");
-
   useEffect(() => {
     const sections = document.querySelectorAll(".section");
     const observer = new IntersectionObserver(
@@ -13,7 +12,7 @@ export default function Navbar() {
           }
         });
       },
-      { threshold: 0 }
+      { threshold: [0.55] },
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -34,14 +33,14 @@ export default function Navbar() {
         <li className={getLinkClass("aboutMe")}>
           <a href="#aboutMe">ABOUT ME</a>
         </li>
-        <li className={getLinkClass("skills")}>
-          <a href="#skills">SKILLS</a>
-        </li>
         <li className={getLinkClass("experience")}>
           <a href="#experience">EXPERIENCE</a>
         </li>
         <li className={getLinkClass("projects")}>
           <a href="#projects">PROJECTS</a>
+        </li>
+        <li className={getLinkClass("skills")}>
+          <a href="#skills">SKILLS</a>
         </li>
       </ul>
     </nav>

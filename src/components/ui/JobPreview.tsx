@@ -16,24 +16,23 @@ type JobProps = {
 
 export function JobPreview({ job }: JobProps) {
   return (
-    <div className="relative text-secondary flex flex-col gap-3 bg-primary/50 rounded-lg p-4 transform transition-all duration-200 hover:bg-primary/70 shadow-md hover:shadow-lg">
-      <div className="absolute inset-0 -z-10 bg-muted rounded-lg transform transition-transform duration-200 translate-y-1"></div>
-
-      <div className="flex gap-4 items-center relative">
+    <div className="relative flex transform flex-col gap-3 rounded-lg bg-primary/0 p-4 text-secondary shadow-md transition-all duration-200 hover:bg-primary/0 hover:shadow-lg">
+      <div className="absolute inset-0 -z-10 translate-y-1 transform rounded-lg bg-muted/50 transition-transform duration-200"></div>
+      <div className="relative flex items-center gap-4">
         {job.logo && (
           <span>
             <img
               src={job.logo}
               alt="logo"
-              className="w-[70px] h-[70px] object-cover"
+              className="h-[70px] w-[70px] object-cover"
             />
           </span>
         )}
         <div>
-          <h3 className="font-semibold text-lg">{job.company}</h3>
+          <h3 className="text-lg font-semibold">{job.company}</h3>
           <h2 className="font-semibold">{job.title}</h2>
-          <h4 className="font-light text-sm">{job.date}</h4>
-          <h4 className="font-light text-sm">{job.location}</h4>
+          <h4 className="text-sm font-light">{job.date}</h4>
+          <h4 className="text-sm font-light">{job.location}</h4>
         </div>
       </div>
       <ul className="flex flex-col gap-1">
@@ -41,10 +40,10 @@ export function JobPreview({ job }: JobProps) {
           return <li className="text-sm">{desc}</li>;
         })}
       </ul>
-      <span className="flex gap-1 flex-wrap">
+      <span className="flex flex-wrap gap-1">
         {job.skills.map((skill: string) => {
           return (
-            <Badge className="flex justify-center bg-secondary font-bold items-center pointer-events-none">
+            <Badge className="pointer-events-none flex items-center justify-center bg-secondary font-bold">
               {skill}
             </Badge>
           );

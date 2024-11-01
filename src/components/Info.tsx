@@ -5,7 +5,7 @@ import { TfiDownload } from "react-icons/tfi";
 import Navbar from "./Navbar";
 export function Info() {
   return (
-    <div className="flex flex-col gap-2 p-4">
+    <div className="flex flex-col gap-2">
       <div className="flex gap-1   text-3xl font-bold text-secondary">
         Syed Mohammad Mazin
       </div>
@@ -23,7 +23,7 @@ export function Info() {
 
       <Navbar />
 
-      <span className="flex gap-2 ">
+      <span className="flex gap-2">
         <Button className="text-white rounded-full">
           <TfiDownload />
           Resume

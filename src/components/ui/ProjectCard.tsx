@@ -16,26 +16,26 @@ type ProjectProps = {
 
 export default function ProjectCard({ project }: ProjectProps) {
   return (
-    <div className="relative text-secondary flex flex-col gap-3 bg-primary/50 rounded-lg p-4 transform transition-all duration-200 group   hover:bg-primary/70 shadow-md hover:shadow-lg">
-      <div className="absolute inset-0 -z-10 bg-muted rounded-lg transform transition-transform duration-200 translate-y-1"></div>
+    <div className="group relative flex transform flex-col gap-3 rounded-lg bg-primary/0 p-4 text-secondary shadow-md transition-all duration-200 hover:bg-primary/0 hover:shadow-lg">
+      <div className="absolute inset-0 -z-10 translate-y-1 transform rounded-lg bg-muted/50 transition-transform duration-200"></div>
 
-      <div className="flex gap-4 items-start relative">
+      <div className="relative flex items-start gap-4">
         {project.logo && (
           <span>
             <img
               src={project.logo}
               alt="logo"
-              className="w-[150px] rounded-lg h-auto object-cover"
+              className="h-auto w-[150px] rounded-lg object-cover"
             />
           </span>
         )}
         <div>
           <h2 className="font-semibold">{project.title}</h2>
-          <h4 className="font-light text-sm">{project.role}</h4>
+          <h4 className="text-sm font-light">{project.role}</h4>
         </div>
         {project.link && (
           <a href={project.link} target="blank" className="ms-auto">
-            <FaExternalLinkAlt className="text-primary/50 group-hover:text-primary transition-colors" />
+            <FaExternalLinkAlt className="text-primary/50 transition-colors group-hover:text-primary" />
           </a>
         )}
       </div>
@@ -44,10 +44,10 @@ export default function ProjectCard({ project }: ProjectProps) {
           return <li className="text-sm">{desc}</li>;
         })}
       </ul>
-      <span className="flex gap-1 flex-wrap">
+      <span className="flex flex-wrap gap-1">
         {project.skills.map((skill: string) => {
           return (
-            <Badge className="flex justify-center bg-secondary font-bold items-center pointer-events-none">
+            <Badge className="pointer-events-none flex items-center justify-center bg-secondary font-bold">
               {skill}
             </Badge>
           );

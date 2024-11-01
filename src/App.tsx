@@ -8,20 +8,16 @@ const App: React.FC = () => {
   useEffect(() => {}, []);
 
   return (
-    <main className="w-[100vw] bg-background min-h-[100vh]">
-      {/* <img
-        width="100%"
-        src="https://capsule-render.vercel.app/api?type=waving&color=0:ff7a00,100:ff5757&height=90&section=header"
-      /> */}
-      <div className="mx-auto w-full max-w-[900px] flex py-12">
-        <section className="flex-1 basis-1/3 sticky top-12 self-start">
+    <main className="min-h-[100vh]">
+      <div className="mx-auto flex w-full max-w-[900px] flex-col py-12 md:flex-row">
+        <section className="sticky top-12 flex-1 basis-1/3 self-start px-8 py-4 md:sticky md:px-4">
           <Info />
         </section>
-        <aside className="flex-2 basis-2/3 overflow-y-auto">
+        <aside className="flex-2 basis-2/3 overflow-y-auto px-8 py-4">
           <ProfessionalInfo />
         </aside>
       </div>
-      <div className="mx-auto w-full max-w-[900px] py-12 text-sm">
+      <div className="mx-auto w-full max-w-[900px] px-8 py-4 text-sm md:px-4">
         <p>
           Designed in Figma, Developed using React, Typescript,{" "}
           <Link href="https://ui.shadcn.com/" text="shadcn/ui" /> and{" "}
@@ -29,7 +25,7 @@ const App: React.FC = () => {
         </p>
       </div>
       <img
-        width="100%"
+        className="w-full"
         src="https://capsule-render.vercel.app/api?type=waving&color=0:ff7a00,100:ff5757&height=135&section=footer"
       />
     </main>

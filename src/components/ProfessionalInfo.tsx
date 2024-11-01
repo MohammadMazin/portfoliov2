@@ -5,11 +5,11 @@ import { Summary } from "./Summary";
 
 export function ProfessionalInfo() {
   return (
-    <div className="py-4 px-8 flex flex-col gap-8">
+    <div className="flex flex-col gap-8">
       <Summary />
-      <Skills />
       <Experience />
       <Projects />
+      <Skills />
     </div>
   );
 }
