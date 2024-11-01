@@ -9,7 +9,7 @@ const App: React.FC = () => {
 
   return (
     <main className="min-h-[100vh]">
-      <div className="mx-auto flex w-full max-w-[900px] flex-col py-12 md:flex-row">
+      <div className="mx-auto flex w-full max-w-[1000px] flex-col py-12 md:flex-row">
         <section className="sticky top-12 flex-1 basis-1/3 self-start px-8 py-4 md:sticky md:px-4">
           <Info />
         </section>

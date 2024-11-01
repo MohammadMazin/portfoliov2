@@ -1,5 +1,24 @@
 import { useEffect, useState } from "react";
 
+const links = [
+  {
+    id: "aboutMe",
+    text: "ABOUT ME",
+  },
+  {
+    id: "experience",
+    text: "EXPERIENCE",
+  },
+  {
+    id: "projects",
+    text: "PROJECTS",
+  },
+  {
+    id: "skills",
+    text: "SKILLS",
+  },
+];
+
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("");
   useEffect(() => {
@@ -12,6 +31,7 @@ export default function Navbar() {
           }
         });
       },
+      // todo: find a better way to do it
       { threshold: [0.55] },
     );
 
@@ -30,18 +50,13 @@ export default function Navbar() {
   return (
     <nav className="my-4">
       <ul>
-        <li className={getLinkClass("aboutMe")}>
-          <a href="#aboutMe">ABOUT ME</a>
-        </li>
-        <li className={getLinkClass("experience")}>
-          <a href="#experience">EXPERIENCE</a>
-        </li>
-        <li className={getLinkClass("projects")}>
-          <a href="#projects">PROJECTS</a>
-        </li>
-        <li className={getLinkClass("skills")}>
-          <a href="#skills">SKILLS</a>
-        </li>
+        {links.map((link) => (
+          <li key={link.id} className="mb-2">
+            <a href={`#${link.id}`} className={getLinkClass(link.id)}>
+              {link.text}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
