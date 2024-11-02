@@ -106,9 +106,8 @@ export const jobs: Job[] = [
       location: "Islamabad, Pakistan",
       date: "Jun 2022 - Sep 2022",
       description: [
-        "Created a Customer  Client management application using NextJS,Prisma and PostgreSQL",
-        "Used shadcn/ui, Tailwind and route handlers to implement all the necessary functionality in a single project",
-        "Focused on creating a reusable and modular frontend application with features such as Reusable forms and tables that could handle different data structures",
+        "Created a UI interface for a messaging client using the WhatsApp Business API which allows for realtime conversation with clients and broadcasting messages",
+        "Responsible for RnD of popular blockchain software programs such as Metamask for creation of new features for the company's app.",
       ],
       skills: ["React", "Blockchain", "Typescript"],
       logo: "https://i.imgur.com/BQduFwE.png"

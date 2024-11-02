@@ -2,7 +2,7 @@ import { Link } from "./ui/Link";
 
 export function Summary() {
   return (
-    <span id="aboutMe" className="section flex flex-col gap-2">
+    <span id="aboutMe" className="section flex flex-col gap-2 text-lg">
       <p>
         Since 2014 I found myself in a constant limbo. Trying out graphic
         design, video editing, <i>a youtube channel</i>, a super short stint as

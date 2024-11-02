@@ -31,7 +31,6 @@ export default function Navbar() {
           }
         });
       },
-      // todo: find a better way to do it
       { threshold: [0.55] },
     );
 

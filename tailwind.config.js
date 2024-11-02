@@ -9,11 +9,27 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      // extend fonts size
+      fontSize: {
+        "2xs": "0.625rem",
+        xs: "0.75rem",
+        sm: "1rem",
+        base: "2rem",
+        lg: "1.25rem",
+        xl: "1.5rem",
+        "2xl": "1.5rem",
+        "3xl": "2rem",
+        "4xl": "2.25rem",
+        "5xl": "3rem",
+        "6xl": "4rem",
+        "7xl": "5rem",
+      },
+
       colors: {
-        background: "#FAF7F0",
+        background: "#FBFBFB",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#BE7457",
+          DEFAULT: "#eb8634",
           foreground: "hsl(var(--secondary-foreground))",
         },
         secondary: {
@@ -21,7 +37,7 @@ module.exports = {
           foreground: "hsl(var(--primary-foreground))",
         },
         muted: {
-          DEFAULT: "#D8D2C2",
+          DEFAULT: "#e3decf",
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
