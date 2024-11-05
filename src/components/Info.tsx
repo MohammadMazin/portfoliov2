@@ -48,7 +48,11 @@ export function Info() {
       <Navbar />
 
       <div className="text-bold flex font-semibold text-secondary">
-        <Button className="" variant={"outline"} onClick={copyEmail}>
+        <Button
+          className="rounded-full"
+          variant={"outline"}
+          onClick={copyEmail}
+        >
           {email} <FaCopy />
         </Button>
       </div>

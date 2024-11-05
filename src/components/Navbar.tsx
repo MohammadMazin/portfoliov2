@@ -50,7 +50,7 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="fixed left-0 top-0 z-50 w-full py-4 shadow backdrop-blur-xl lg:static lg:block lg:shadow-none">
+    <nav className="left-0 top-0 z-50 hidden w-full py-4 shadow backdrop-blur-xl lg:static lg:block lg:shadow-none">
       <ul className="flex h-full w-full items-center justify-around lg:block">
         {links.map((link) => (
           <li key={link.id} className="mb-2">
