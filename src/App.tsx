@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Info } from "./components/Info";
 import { ProfessionalInfo } from "./components/ProfessionalInfo";
-import { Link } from "./components/ui/Link";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   return (
@@ -15,16 +15,7 @@ const App: React.FC = () => {
           <ProfessionalInfo />
         </aside>
       </div>
-      <div className="mx-auto w-full max-w-[1200px] px-8 py-4 text-sm lg:px-4">
-        <p>
-          Designed in Figma, Developed using React, Typescript,{" "}
-          <Link href="https://ui.shadcn.com/" text="shadcn/ui" />
-        </p>
-      </div>
-      <img
-        className="w-full"
-        src="https://capsule-render.vercel.app/api?type=waving&color=0:ff7a00,100:ff5757&height=135&section=footer"
-      />
+      <Footer />
     </main>
   );
 };
