@@ -12,7 +12,7 @@ export const skills = [
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Nest.Js", "Express", "Golang", "Prisma", "PostgreSQL", "MySQL", "MongoDB", "DynamoDB"],
+    skills: ["Node.js", "Nest.Js", "Express", "Golang", "PostgreSQL", "MySQL", "MongoDB", "Redis", "DynamoDB", "Prisma",],
   },
   {
     title: "Cloud",
@@ -97,7 +97,7 @@ export const jobs: Job[] = [
         "Built the admin dashboard from scratch, including UI design and backend implementation",
         "Fixed security issues, potential XSS attacks, and improving the application stability by fixing legacy bugs",
       ],
-      skills: ["Angular", "NodeJs", "NestJs", "AWS"],
+      skills: ["Angular", "NodeJs", "NestJs", "AWS", "Redis",],
       logo: "https://i.imgur.com/1Ro3NL8.png",
     },
     {

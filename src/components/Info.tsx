@@ -1,14 +1,21 @@
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaCopy, FaGithub } from "react-icons/fa";
 import { Button } from "./ui/button";
 import { TfiDownload } from "react-icons/tfi";
 import Navbar from "./Navbar";
+import { toast } from "sonner";
+
+const email = "smmazin2000@gmail.com";
 export function Info() {
   const downloadResume = () => {
     const link = document.createElement("a");
     link.href = "/resume.pdf";
     link.download = "Syed Mohammad Mazin - Full Stack Developer Resume.pdf";
     link.click();
+  };
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText("smmazin2000@gmail.com");
+    toast("Copied email to clipboard");
   };
 
   return (
@@ -41,7 +48,9 @@ export function Info() {
       <Navbar />
 
       <div className="text-bold flex font-semibold text-secondary">
-        smmazin2000@gmail.com
+        <Button className="" variant={"outline"} onClick={copyEmail}>
+          {email} <FaCopy />
+        </Button>
       </div>
 
       <span className="flex gap-2">
@@ -49,6 +58,7 @@ export function Info() {
           <TfiDownload />
           Resume
         </Button>
+
         {/* <Button className="rounded-full text-white">Contact Me</Button> */}
       </span>
     </div>
