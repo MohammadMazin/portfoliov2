@@ -47,19 +47,19 @@ export const projects: Project[] = [
       skills: ["HTML", "CSS", "Javascript", "GSAP", "MatterJS"],
       link: "https://buymeacoffee.com/kayleberries/extras",
     },
-    {
-      title: "Kayleberries Portfolio",
-      role: "UI Designer and Web Developer",
-      description: [
-        "Worked on the Subscription and Affiliate service",
-        "Implemented Bank Transfer and Pay My Mobile options as payment methods",
-        "Fixed security issues",
-        "Performed R&D on fixing potential XSS attacks, adding new features to display reports",
-      ],
-      skills: ["HTML", "CSS", "Javascript", "GSAP"],
-      link: "https://kayleportfolio.netlify.app/",
-      logo: "https://i.imgur.com/bEG74Z6.png",
-    },
+    // {
+    //   title: "Kayleberries Portfolio",
+    //   role: "UI Designer and Web Developer",
+    //   description: [
+    //     "Worked on the Subscription and Affiliate service",
+    //     "Implemented Bank Transfer and Pay My Mobile options as payment methods",
+    //     "Fixed security issues",
+    //     "Performed R&D on fixing potential XSS attacks, adding new features to display reports",
+    //   ],
+    //   skills: ["HTML", "CSS", "Javascript", "GSAP"],
+    //   link: "https://kayleportfolio.netlify.app/",
+    //   logo: "https://i.imgur.com/bEG74Z6.png",
+    // },
 ];
 
 export const jobs: Job[] = [
