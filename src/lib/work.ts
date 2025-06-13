@@ -40,9 +40,8 @@ export const projects: Project[] = [
       title: "Widgets for Twitch and Youtube Streamers",
       role: "Designer and Developer",
       description: [
-        "Added features to their hiring platform to improve automation of processing over 3000 candidates info and data analysis on their profile",
-        "Included GitHub and Slack integration for managing applicant information",
-        "Received training for Fullstack web development and DevOps with AWS to learn the full deployment cycle",
+        "Created widgets for Twitch and Youtube streamers",
+        "Used tools MatterJS, CSS Animations to make widgets that react to stream events to create an interactive and exciting stream for viewers",
       ],
       skills: ["HTML", "CSS", "Javascript", "GSAP", "MatterJS"],
       link: "https://buymeacoffee.com/kayleberries/extras",
